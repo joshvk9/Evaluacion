@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <script src="/Js/Alumno-Docente.js" ></script>
+    <link rel="stylesheet" href="/css/Alumno-Docente.css">
+</head>
+
+<header class="header">
+    <div class="logo">
+        <img src="/Imagenes/LOGO-UTC-COLOR.png" alt="Logo de la marca">
+    </div>
+    <nav>
+       <ul class="nav-links">
+            <li><a href="/Html/Inicio.html">Inicio</a></li>
+            <li><a href="#">Evaluacion </a></li>
+       </ul>            
+    </nav>
+    <a class="btn" href="#"><button>Inicio de Sesion</button></a>
+</header>
+<br>
+    <h1 style="text-align: center;">
+        Bienvenido a La evaluación Docente 
+    </h1>
+    <h2 style="text-align: center;">
+        Donde van a evaluar a sus docentes.
+        Se evaluara de diferentes formas por medio de diferentes preguntas.
+        
+    </h2>
+    <h2 style="text-align: center;"> Por favor  leer con cuidado y responder honestamente</h2>
+
+
+<body>
+    <form id="form">
+        <div class="form-control">
+            <label for="name" id="label-name">
+                <p style="text-align: center;"> Nombre </p>
+            </label>
+ 
+            <input style="text-align: center;"  type="text"
+                   id="name"
+                   placeholder="Nombre Completo" />
+        </div>
+  
+        <div  class="form-control">
+            <label for="email" id="label-email">
+                <p style="text-align: center;"> Carrera </p>
+            </label>
+ 
+            <input style="text-align: center;" type="email"
+                   id="email"
+                   placeholder="Carrera que estas Estudiando" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                <p style="text-align: center;"> Turno que asiste </p>
+            </label>
+ 
+            <input style="text-align: center;"  type="text"
+                   id="age"
+                   placeholder="Turno" />
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-role">
+                <p style="text-align: center;">Materia a evaluar</p>
+            </label>
+             
+            <select style="text-align: center;"  name="role" id="role">
+                <option value="student">IA</option>
+                <option value="intern">Redes</option>
+                <option value="professional">Pagina Web</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        
+        <div class="form-control">
+            <label for="role" id="label-role">
+                <p style="text-align: center;">Maestro a Evaluar</p>
+            </label>
+             
+            <select style="text-align: center;"  name="role" id="role">
+                <option value="student">Jaime Minor</option>
+                <option value="intern">Besain Servas </option>
+                <option value="professional">Jovany</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+  
+  
+        <div  style="text-align: center;" class="form-control">
+            <label>
+                Te gusta la materia 
+            </label>
+ 
+            <br>
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Yes</input>
+            </label>
+            <label style="text-align: center;" for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Maybe</input>
+            </label>
+        </div>
+  
+        <div  style="text-align: center;" class="form-control">
+            <label>Languages and Frameworks known
+                <small>(Check all that apply)</small>
+
+            </label>
+            <br>
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">C</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">C++</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">C#</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Java</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Python</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">JavaScript</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">React</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Angular</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Django</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Spring</input></label>
+        </div>
+  
+        <div style="text-align: center;" class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <button type="submit" value="submit">Enviar</button>
+    </form>
+</body>
+
+</body>
+</html>
