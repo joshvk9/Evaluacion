@@ -8,6 +8,7 @@
     <script src="/Js/Alumno-Docente.js" ></script>
     <link rel="stylesheet" href="/css/Alumno-Docente.css">
 </head>
+
 <header class="header">
     <div class="logo">
         <img src="/Imagenes/LOGO-UTC-COLOR.png" alt="Logo de la marca">
@@ -15,27 +16,29 @@
     <nav>
        <ul class="nav-links">
             <li><a href="/Html/Inicio.html">Inicio</a></li>
-            <li><a href="/Html/Gestion de Formulario.html">Gestion de Formulario </a></li>
-            <li><a href="/Html/Evaluación Historico.html">Evaluación Historico</a></li>
-            <li><a href="/Html/Gestion Docente.html">Gestion Docente</a></li>
-            <li><a href="/Html/Publicaciones.html">Publicaciones</a></li>
-            <li><a href="/Html/Gestion de Alumnos.html">Gestion de Alumnos</a></li>
+            <li><a href="#">Evaluacion </a></li>
        </ul>            
     </nav>
     <a class="btn" href="#"><button>Inicio de Sesion</button></a>
 </header>
 <br>
-    <h1 style="text-align: center;">Bienvenido a La evaluación Docente </h1>
+    <h1 style="text-align: center;">
+        Bienvenido a La evaluación Docente 
+    </h1>
+    <br>
     <h2 style="text-align: center;">
-        Donde van a evaluar a sus docentes.
-        Se evaluara de diferentes formas por medio de diferentes preguntas.  
+        Donde van a evaluar a sus docentes.<br>
+        Se evaluara de diferentes formas por medio de diferentes preguntas.
+        
     </h2>
-    <h2 style="text-align: center;"> Por favor  leer con cuidado y responder honestamente</h2>
+    <h2 style="text-align: center;"> Lee cuidadosamente lo que se te pide y contesta honestamente</h2>
+
+
 <body>
     <form id="form">
         <div class="form-control">
             <label for="name" id="label-name">
-                <p style="text-align: center;"> Nombre </p>
+                <p style="text-align: center;">Nombre completo</p>
             </label>
  
             <input style="text-align: center;"  type="text"
@@ -45,7 +48,7 @@
   
         <div  class="form-control">
             <label for="email" id="label-email">
-                <p style="text-align: center;"> Carrera </p>
+                <p style="text-align: center;">Carrera y cuatrimestre actual</p>
             </label>
  
             <input style="text-align: center;" type="email"
@@ -55,7 +58,7 @@
   
         <div class="form-control">
             <label for="age" id="label-age">
-                <p style="text-align: center;"> Turno que asiste </p>
+                <p style="text-align: center;"> Turno Matutino o Despertino </p>
             </label>
  
             <input style="text-align: center;"  type="text"
@@ -69,8 +72,8 @@
             </label>
              
             <select style="text-align: center;"  name="role" id="role">
-                <option value="student">IA</option>
-                <option value="intern">Redes</option>
+                <option value="student">Materia 1</option>
+                <option value="intern">Materia 2</option>
                 <option value="professional">Pagina Web</option>
                 <option value="other">Other</option>
             </select>
@@ -84,76 +87,68 @@
             <select style="text-align: center;"  name="role" id="role">
                 <option value="student">Jaime Minor</option>
                 <option value="intern">Besain Servas </option>
-                <option value="professional">Jovany</option>
-                <option value="other">Other</option>
+                <option value="professional">Jovany Martinez</option>
+                <option value="other"></option>
             </select>
         </div>
   
   
         <div  style="text-align: center;" class="form-control">
             <label>
-                Te gusta la materia 
+                ¿Comó calificarias el desempeño del profesor?
             </label>
  
             <br>
             <label for="recommed-1">
                 <input type="radio"
                        id="recommed-1"
-                       name="recommed">Yes</input>
+                       name="recommed">Muy Malo</input>
             </label>
             <label style="text-align: center;" for="recommed-2">
                 <input type="radio"
                        id="recommed-2"
-                       name="recommed">No</input>
+                       name="recommed">Malo</input>
             </label>
             <label for="recommed-3">
                 <input type="radio"
                        id="recommed-3"
-                       name="recommed">Maybe</input>
+                       name="recommed">Regular</input>
             </label>
+                        </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Bueno</input>
+            </label>
+        </label>
+        <label for="recommed-4">
+            <input type="radio"
+                   id="recommed-4"
+                   name="recommed">Excelente</input>
+        </label>
         </div>
   
         <div  style="text-align: center;" class="form-control">
-            <label>Languages and Frameworks known
-                <small>(Check all that apply)</small>
-
+            <label>¿Recomendarias a este profesor con tus compañeros de nuevo ingreso?
             </label>
             <br>
             <label for="inp-1">
                 <input type="checkbox"
-                       name="inp">C</input></label>
+                       name="inp">No lo recomiendo</input></label>
             <label for="inp-2">
                 <input type="checkbox"
-                       name="inp">C++</input></label>
+                       name="inp">Probablemente</input></label>
             <label for="inp-3">
                 <input type="checkbox"
-                       name="inp">C#</input></label>
+                       name="inp">Lo recomiendo</input></label>
             <label for="inp-4">
                 <input type="checkbox"
-                       name="inp">Java</input></label>
-            <label for="inp-5">
-                <input type="checkbox"
-                       name="inp">Python</input></label>
-            <label for="inp-6">
-                <input type="checkbox"
-                       name="inp">JavaScript</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">React</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Angular</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Django</input></label>
-            <label for="inp-7">
-                <input type="checkbox"
-                       name="inp">Spring</input></label>
+                       name="inp"></input>Muy recomendable</label>
         </div>
   
         <div style="text-align: center;" class="form-control">
             <label for="comment">
-                Any comments or suggestions
+                Comentarios y/o sugerencias
             </label>
  
             <textarea name="comment" id="comment"
@@ -164,6 +159,5 @@
         <button type="submit" value="submit">Enviar</button>
     </form>
 </body>
-
 </body>
 </html>
